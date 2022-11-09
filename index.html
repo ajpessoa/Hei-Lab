@@ -4,6 +4,7 @@
 <title>HEI-Lab ULusófona</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/mini_logo.png" type="image/icon type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,14 +47,14 @@
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Team</a>
+  <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button">Research</a>
+  <a href="#news" onclick="w3_close()" class="w3-bar-item w3-button">News</a>
+  <a href="#events" onclick="w3_close()" class="w3-bar-item w3-button">Events</a>
+  <a href="#laboratory" onclick="w3_close()" class="w3-bar-item w3-button">Laboratory</a>
+  <a href="#studio" onclick="w3_close()" class="w3-bar-item w3-button">HEI-Lab Studio</a>
+  <a href="#repository" onclick="w3_close()" class="w3-bar-item w3-button">Repository</a>
 </nav>
-
-
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
@@ -71,9 +72,8 @@
   </div>
 </header>
 
-
 <!-- Section with counters -->
-<div class="w3-row w3-center w3-white w3-content w3-container w3-padding-16">
+<div class="w3-row w3-center w3-white w3-content w3-container w3-padding-16" id="counters">
   <div class="w3-half w3-section">
     <span class="w3-xxlarge values w3-text-dark-grey">Team</span><br>
     <div class="w3-half">
@@ -86,7 +86,7 @@
     </div>
   </div>
 
-  <div class="w3-half w3-section">
+  <div class="w3-half w3-section" style="padding-bottom:100px;">
     <span class="w3-xxlarge values w3-text-dark-grey">Research</span><br>
     <div class="w3-half">
       <span id="num-projects" class="w3-xxxlarge w3-text-yellow values">96</span><br>
@@ -99,38 +99,189 @@
   </div>
 </div>
 
-
-<!-- Partners Section -->
-<div class="w3-content w3-container w3-padding-64" id="partners">
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <h1>Partners</h1>
-    <div class="w3-col m3">
-      <img src="images/ulht_logo-1024x1024.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Universidade Lusófona">
+<!-- Team Section -->
+<div class="w3-container w3-light-gray w3-padding-32" id="team">
+  <h3 class="w3-center w3-text-dark-gray">TEAM</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <a href="#">
+        <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Integrated Researchers</div>
+      </a>
     </div>
-    <div class="w3-col m3">
-      <img src="images/erasmus-1024x1024.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Erasmus+">
+    <div class="w3-quarter">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Researchers</div>
+      </a>
     </div>
-    <div class="w3-col m3">
-      <img src="images/fct_logo-1024x1024.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Fundação para a Ciência e a Tecnologia">
+    <div class="w3-quarter">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Students</div>
+      </a>
     </div>
-    <div class="w3-col m3">
-      <img src="images/cost_logo-1024x1024.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="European Cooperation in Science & Technology">
+    <div class="w3-quarter">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Advisory Board</div>
+      </a>
     </div>
   </div>
-  <div class="w3-row-padding w3-center w3-section"> 
-    <div class="w3-col m3">
-      <img src="images/ilind_logo.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Instituto Lusófono de Investigação e Desenvolvimento">
+</div>
+
+<!-- Research Section -->
+<div class="w3-container w3-padding-32" id="research">
+  <h3 class="w3-center w3-text-dark-gray">RESEARCH</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <a href="#">
+        <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Research Hub</div>
+      </a>
     </div>
-    <div class="w3-col m3">
-      <img src="images/epcv_logo.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Escola de Psicologia e Ciências da Vida">
+    <div class="w3-third">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Publications</div>
+      </a>
     </div>
-    <div class="w3-col m3">
-      <img src="images/promethean-1024x1024.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Promethean">
+    <div class="w3-third">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Funding</div>
+      </a>
     </div>
-    <div class="w3-col m3">
-      <img src="images/dcam-1024x1024.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Departamento Cinema e Artes dos Media">
-    </div>  
+    <div class="w3-third">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Editorial Boards</div>
+      </a>
+    </div>
+    <div class="w3-third">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Prizes</div>
+      </a>
+    </div>
+    <div class="w3-third">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Network</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- News Section -->
+<div class="w3-container w3-padding-32 w3-light-gray" id="news">
+  <h3 class="w3-center w3-text-dark-gray">NEWS</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <a href="#">
+        <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">HEI-Lab Outreach</div>
+      </a>
+    </div>
+    <div class="w3-third">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Highlights</div>
+      </a>
+    </div>
+    <div class="w3-third">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Recruitment</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Events Section -->
+<div class="w3-container w3-padding-32" id="events">
+  <h3 class="w3-center w3-text-dark-gray">EVENTS</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <a href="#">
+        <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Conferences</div>
+      </a>
+    </div>
+    <div class="w3-third">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Scientific Meetings</div>
+      </a>
+    </div>
+    <div class="w3-third">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Summer School 2020</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Laboratory Section -->
+<div class="w3-container w3-padding-32 w3-light-gray" id="laboratory">
+  <h3 class="w3-center w3-text-dark-gray">LABORATORY</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">&nbsp;</div>
+    <div class="w3-quarter">
+      <a href="#">
+        <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Labs</div>
+      </a>
+    </div>
+    <div class="w3-quarter">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Projects</div>
+      </a>
+    </div>
+    <div class="w3-quarter">&nbsp;</div>
+  </div>
+</div>
+
+
+<!-- Misc Section -->
+<div class="w3-container w3-padding-32" id="misc">
+  <h3 class="w3-center w3-text-dark-gray">MISCELANEOUS</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <a href="#">
+        <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Gender Data</div>
+      </a>
+    </div>
+    <div class="w3-third">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">HEI-Lab Studio</div>
+      </a>
+    </div>
+    <div class="w3-third">
+      <a href="#">
+      <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge w3-padding-24">Repository</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Partners Section -->
+<div class="w3-container w3-light-gray">
+  <div class="w3-content w3-padding-64" id="partners">
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <h1>Partners</h1>
+      <div class="w3-col m3">
+        <img src="images/ulht_logo-1024x1024.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Universidade Lusófona">
+      </div>
+      <div class="w3-col m3">
+        <img src="images/erasmus-1024x1024.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Erasmus+">
+      </div>
+      <div class="w3-col m3">
+        <img src="images/fct_logo-1024x1024.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Fundação para a Ciência e a Tecnologia">
+      </div>
+      <div class="w3-col m3">
+        <img src="images/cost_logo-1024x1024.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="European Cooperation in Science & Technology">
+      </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-section"> 
+      <div class="w3-col m3">
+        <img src="images/ilind_logo.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Instituto Lusófono de Investigação e Desenvolvimento">
+      </div>
+      <div class="w3-col m3">
+        <img src="images/epcv_logo.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Escola de Psicologia e Ciências da Vida">
+      </div>
+      <div class="w3-col m3">
+        <img src="images/promethean-1024x1024.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Promethean">
+      </div>
+      <div class="w3-col m3">
+        <img src="images/dcam-1024x1024.png" style="width:70%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Departamento Cinema e Artes dos Media">
+      </div>  
+    </div>
   </div>
 </div>
 
@@ -147,8 +298,8 @@
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <span>Building D, Room D1.3 </span><br>
-        <i class="fa fa-fw w3-xlarge w3-margin-right "></i><span>Lusófona University </span><br>
-        <i class="fa fa-fw w3-xlarge w3-margin-right "></i><span>Campo Grande, 376 1749-024 Lisbon</span><br>
+        <i class="fa fa-fw w3-xlarge w3-margin-right"></i><span>Lusófona University </span><br>
+        <i class="fa fa-fw w3-xlarge w3-margin-right"></i><span>Campo Grande, 376 1749-024 Lisbon</span><br>
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> +00 351 217 515 500<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> hei-lab@ulusofona.pt<br>
       </div>
@@ -176,9 +327,9 @@
 <footer class="w3-center w3-black w3-padding-32">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/HEILabULHT/" target="_blank"><i class="fa fa-facebook-official fa-fw w3-hover-opacity w3-xlarge"></i></a>
-    <i class="fa fa-twitter fa-fw w3-hover-opacity w3-xlarge"></i>
-    <a href="https://www.linkedin.com/in/hei-lab-human-environment-interaction-lab-174b31227/" target="_blank"><i class="fa fa-linkedin fa-fw w3-hover-opacity w3-xlarge"></i></a>
+    <a href="https://www.facebook.com/HEILabULHT/" target="_blank"><i class="fa fa-facebook-official fa-fw w3-hover-opacity w3-xxlarge"></i></a>
+    <i class="fa fa-twitter fa-fw w3-hover-opacity w3-xxlarge"></i>
+    <a href="https://www.linkedin.com/in/hei-lab-human-environment-interaction-lab-174b31227/" target="_blank"><i class="fa fa-linkedin fa-fw w3-hover-opacity w3-xxlarge"></i></a>
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green ">w3.css</a></p>
 </footer>
