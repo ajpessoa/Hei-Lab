@@ -1,0 +1,49 @@
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: 'Noto Sans',Helvetica,Arial,Lucida,sans-serif;
+  position: relative;
+}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+
+
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/ULHT_08-1024x683.jpg");
+  background-color: black;
+  min-height: 40%;
+  opacity: 85%;
+}
+
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/ULHT_12-1024x848.jpg");
+  background-color: black;
+  min-height: 40%;
+  opacity: 85%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.values {
+  font-family: 'Noto Sans',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.vl {
+  border-left: 6px solid skyblue;
+  height: 500px;
+}
+
+.vl2 {
+  border-left: 12px solid yellow;
+  height: 300px;
+}
