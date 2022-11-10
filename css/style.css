@@ -5,11 +5,22 @@ body,h1,h2,h3,h4,h5,h6 {
 
 body, html {
   height: 100%;
-  line-height: 1.8;
 }
 
 a {
   text-decoration: none;
+}
+
+.square-btn {
+  height: 100px;
+  width: 200px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.square-btn:hover {
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
 }
 
 /* Full height image header */
