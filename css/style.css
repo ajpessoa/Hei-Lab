@@ -48,6 +48,7 @@ a {
 
 .values {
   font-family: 'Noto Sans',Helvetica,Arial,Lucida,sans-serif;
+  color: rgb(255, 187, 0);
 }
 
 .vl {
@@ -58,4 +59,7 @@ a {
 .vl2 {
   border-left: 12px solid yellow;
   height: 300px;
+}
+.shadow-text{
+  text-shadow:1px 1px 0 #444
 }
