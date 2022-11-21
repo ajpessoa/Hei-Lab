@@ -241,7 +241,7 @@
     
               <div class="call-to-action classic">
                 <div class="row align-items-center">
-                  <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
+                  <div class="col-md-12 text-right text-md-right mt-3 mt-md-0">
                     <div class="call-to-action-btn">
                       <a class="btn btn-primary" href="https://carlosrelvasvr.ulusofona.pt">Learn More</a>
                     </div>
@@ -349,10 +349,10 @@
         }
         const buttons = document.getElementsByClassName("menu-btn");
         for (let i = 0; i < buttons.length; i++) {
-            buttons[i].className = " ";
+            buttons[i].classList.remove('active');
         }
-        document.getElementById(a).className = "active"
-        document.getElementById(b).style.display = "block"
+        document.getElementById(a).classList.add('active');
+        document.getElementById(b).style.display = "block";
     }
 </script>
 
