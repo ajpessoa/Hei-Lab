@@ -1,408 +1,552 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>HEI-Lab ULusófona</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="images/mini_logo.png" type="image/icon type">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Construction Html5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 
-<link rel="stylesheet" href="css/style.css">
-<script type = "text/javascript" src="js/scripts.js"></script>
+    <title>Hei-Lab Universidade Lusófona</title>
+    <link rel="icon" type="image/png" href="images/mini_logo.png">
 
-<style>
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("images/ULHT_08-1024x683.jpg");
-  background-color: black;
-  min-height: 95%;
-}
-
-.bgimg-2 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("images/ULHT_12-1024x848.jpg");
-  background-color: black;
-  min-height: 60%;
-}
-
-</style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="plugins/animate-css/animate.css">
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body onload="load()">
+<body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="images/LogoType_Hei-Lab-02.jpg" style="width: 90px;"></a>
-     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
+<div class="body-inner">
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Team</a>
-  <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button">Research</a>
-  <a href="#news" onclick="w3_close()" class="w3-bar-item w3-button">News</a>
-  <a href="#events" onclick="w3_close()" class="w3-bar-item w3-button">Events</a>
-  <a href="#laboratory" onclick="w3_close()" class="w3-bar-item w3-button">Laboratory</a>
-  <a href="#studio" onclick="w3_close()" class="w3-bar-item w3-button">HEI-Lab Studio</a>
-  <a href="#repository" onclick="w3_close()" class="w3-bar-item w3-button">Repository</a>
-</nav>
+    <!-- Navigation bar start -->
+    <div id="top-bar" class="top-bar"></div>
+    <header id="header" class="header-two">
+    <div class="site-navigation">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    
+                    <div class="logo">
+                        <a class="d-block" href="index.html">
+                        <img loading="lazy" src="images/LogoType_Hei-Lab-02.jpg" alt="Hei-Lab" style="min-height: 50px;">
+                        </a>
+                    </div><!-- logo end -->
 
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white w3-center" style="padding:48px">
-    <img src="images/Hei_lab_white_transp_hor.png" style="max-width: 75%;">
-    <br>
-    <br>
-    <br>
-    <span class="w3-xlarge" style="text-shadow:2px 2px 3px rgb(0, 0, 0)"><b>HEI-Lab</b> is a unique Research Unit featuring a multidisciplinary team focused in creating new knowledge</span>
-  </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="w3-xxlarge fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="w3-xxlarge fa fa-twitter w3-hover-opacity"></i>
-    <i class="w3-xxlarge fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</header>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div id="navbar-collapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav ml-auto align-items-center">
+                        
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Team<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="integrated.html">Integrated Researchers</a></li>
+                                <li><a href="researchers.html">Researchers</a></li>
+                                <li><a href="students.html">Students</a></li>
+                                <li><a href="board.html">Advisory Board</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="research-hub.html">Research Hub</a></li>
+                                <li><a href="publications.html">Publications</a></li>
+                                <li><a href="funding.html">Funding</a></li>
+                                <li><a href="editorial.html">Editorial Board</a></li>
+                                <li><a href="prizes.html">Prizes</a></li>
+                                <li><a href="network.html">Network</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">News <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="outreach.html">Hei-Lab Outreach</a></li>
+                                <li><a href="highlights.html">Highlights</a></li>
+                                <li><a href="recruitments.html">Recruitments</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Events <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                            <li><a href="conferences.html">Conferences</a></li>
+                            <li><a href="meetings.html">Scientific Meetings</a></li>
+                            <li><a href="summer-school.html">Summer School 2020</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Laboratory <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                            <li><a href="labs.html">Labs</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="nav-item"><a class="nav-link" href="studio.html">HEI-Lab Studio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="repository.html">Repository</a></li>
 
-<!-- Section with counters -->
-<div class="w3-row w3-center w3-white w3-content w3-container w3-padding-16" id="counters">
-  <div class="w3-half w3-section">
-    <span class="w3-xxlarge values w3-text-dark-grey">Team</span><br>
-    <div class="w3-half">
-      <span id="num-researchers" class="w3-xxxlarge values">41</span><br>
-      <span class="w3-large values w3-text-dark-grey"><b>Researchers</b></span>
-    </div>
-    <div class="w3-half">
-      <span id="num-colaborators" class="w3-xxxlarge values">32</span><br>
-      <span class="w3-large values w3-text-dark-grey"><b>Colaborators</b></span>
-    </div>
-  </div>
-
-  <div class="w3-half w3-section" style="padding-bottom:100px;">
-    <span class="w3-xxlarge values w3-text-dark-grey">Research</span><br>
-    <div class="w3-half">
-      <span id="num-projects" class="w3-xxxlarge values">96</span><br>
-      <span class="w3-large values w3-text-dark-grey"><b>Funded Projects</b></span>
-    </div>
-    <div class="w3-half">
-      <span id="num-papers" class="w3-xxxlarge values">376</span><br>
-      <span class="w3-large values w3-text-dark-grey"><b>Papers</b></span>
-    </div>
-  </div>
-</div>
-
-<!-- Team Section -->
-<div class="w3-container w3-light-gray">
-  <div class="w3-content w3-padding-64" id="team">
-    <div class="w3-row-padding w3-center">
-      <h3 class="w3-center w3-text-dark-gray shadow-text">TEAM</h3>
-      <br>
-      <div class="w3-col m3">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Integrated Researchers</span></div>
-        </a>
-      </div>
-      <div class="w3-col m3">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Researchers</div>
-        </a>
-      </div>
-      <div class="w3-col m3">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Students</div>
-        </a>
-      </div>
-      <div class="w3-col m3">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Advisory <br>Board</div>
-        </a>
-      </div>
-    </div>
-    </div>
-</div>
-
-<!-- Research Section -->
-<div class="w3-container">
-  <div class="w3-padding-64" id="research">
-    <div class="w3-row-padding w3-center">
-      <h3 class="w3-center w3-text-dark-gray shadow-text">RESEARCH</h3>
-      <br>
-      <div class="w3-col m3">&nbsp;</div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Research Hub</div>
-        </a>
-      </div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Publications</div>
-          </a>
-      </div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Funding</div>
-          </a>
-      </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-section"> 
-      <div class="w3-col m3">&nbsp;</div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Editorial Boards</div>
-          </a>
-      </div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Prizes</div>
-          </a>
-      </div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Network</div>
-          </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- News Section -->
-<div class="w3-container w3-light-gray">
-  <div class="w3-padding-64" id="news">
-    <div class="w3-row-padding w3-center">
-      <h3 class="w3-center w3-text-dark-gray shadow-text">NEWS</h3>
-      <br>
-      <div class="w3-col m3">&nbsp;</div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">HEI-Lab Outreach</div>
-        </a>
-      </div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Highlights</div>
-        </a>
-      </div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Recruitment</div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Events Section -->
-<div class="w3-container">
-  <div class="w3-padding-64" id="events">
-    <div class="w3-row-padding w3-center">
-      <h3 class="w3-center w3-text-dark-gray shadow-text">EVENTS</h3>
-      <br>
-      <div class="w3-col m3">&nbsp;</div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Conferences</div>
-        </a>
-      </div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Scientific Meetings</div>
-        </a>
-      </div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Summer School 2020</div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Laboratory Section -->
-<div class="w3-container w3-light-gray">
-  <div class="w3-padding-64" id="laboratory">
-    <div class="w3-row-padding w3-center">
-      <h3 class="w3-center w3-text-dark-gray shadow-text">LABORATORY</h3>
-      <br>
-      <div class="w3-col m4">&nbsp;</div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Labs</div>
-        </a>
-      </div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Projects</div>
-        </a>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Misc Section -->
-<div class="w3-container">
-  <div class="w3-padding-64" id="misc">
-    <div class="w3-row-padding w3-center">
-      <h3 class="w3-center w3-text-dark-gray shadow-text">MISCELANEOUS</h3>
-      <br>
-      <div class="w3-col m3">&nbsp;</div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Gender Data</div>
-        </a>
-      </div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">HEI-Lab Studio</div>
-        </a>
-      </div>
-      <div class="w3-col m2">
-        <a href="#">
-          <div class="w3-panel w3-text-dark-gray w3-card w3-hover-grey w3-round-large w3-white w3-xlarge square-btn">Repository</div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Partners Section -->
-<div class="w3-container w3-highway-yellow">
-  <div class="w3-content w3-padding-64" id="partners">
-    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-    <div class="w3-row-padding w3-center">
-      <h1 class="shadow-text">Partners</h1>
-      <div class="w3-col m3">
-        <img src="images/ulht_logo-1024x1024.png" style="width:70%;" alt="Universidade Lusófona">
-      </div>
-      <div class="w3-col m3">
-        <img src="images/erasmus-1024x1024.png" style="width:70%;" alt="Erasmus+">
-      </div>
-      <div class="w3-col m3">
-        <img src="images/fct_logo-1024x1024.png" style="width:70%;" alt="Fundação para a Ciência e a Tecnologia">
-      </div>
-      <div class="w3-col m3">
-        <img src="images/cost_logo-1024x1024.png" style="width:70%;" alt="European Cooperation in Science & Technology">
-      </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-section"> 
-      <div class="w3-col m3">
-        <img src="images/ilind_logo.png" style="width:70%;" alt="Instituto Lusófono de Investigação e Desenvolvimento">
-      </div>
-      <div class="w3-col m3">
-        <img src="images/epcv_logo.png" style="width:70%;" alt="Escola de Psicologia e Ciências da Vida">
-      </div>
-      <div class="w3-col m3">
-        <img src="images/promethean-1024x1024.png" style="width:70%;"alt="Promethean">
-      </div>
-      <div class="w3-col m3">
-        <img src="images/dcam-1024x1024.png" style="width:70%;" alt="Departamento Cinema e Artes dos Media">
-      </div>  
-    </div>
-  </div>
-</div>
-
-<!-- Contact Section -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h2 class="w3-center">Contact Us</h2>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.978312690763!2d-9.15517640006054!3d38.758088944740315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1932fc16a21773%3A0xbb910a0db57ce114!2sUniversidade%20Lus%C3%B3fona%20de%20Humanidades%20e%20Tecnologias!5e1!3m2!1spt-PT!2spt!4v1667993349705!5m2!1spt-PT!2spt" 
-      width="300" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <span>Building D, Room D1.3 </span><br>
-        <i class="fa fa-fw w3-xlarge w3-margin-right"></i><span>Lusófona University </span><br>
-        <i class="fa fa-fw w3-xlarge w3-margin-right"></i><span>Campo Grande, 376 1749-024 Lisbon</span><br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> +00 351 217 515 500<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> hei-lab@ulusofona.pt<br>
-      </div>
-      <br/>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
+                        
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!--/ Col end -->
+            </div>
+            <!--/ Row end -->
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
+        <!--/ Container end -->
+
     </div>
-  </div>  
-</div>
+    <!--/ Navigation end -->
+
+    </header>
+    <!--/ Header end -->
+
+    <div class="banner-carousel banner-carousel-2 mb-0">
+        <div class="banner-carousel-item" style="background-image:url(images/ULHT_10-1024x683.jpg)">
+            <div class="container">
+                <div class="box-slider-content">
+                    <div class="box-slider-text">
+                        <h3 class="box-slide-sub-title">Welcome to Hei-Lab</h3>
+                        <h2 class="box-slide-title"><b>Digital Human-Environment Interaction Labs</b></h2>
+                        <p class="box-slide-description"><b>HEI-Lab</b> is a unique Research Unit featuring a multidisciplinary team focused in creating new knowledge. 
+                            Our mission is to converge Psychology and Videogame knowledge into a transdisciplinary scientific platform aimed at studying human behavior 
+                            within this interactive view. </p>
+                        <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Learn More</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="banner-carousel-item" style="background-image:url(images/ULHT_12-1024x848.jpg)">
+        <div class="slider-content text-left">
+            <div class="container">
+                <div class="box-slider-content">
+                    <div class="box-slider-text">
+                        <h3 class="box-slide-sub-title">Research Labs</h3>
+                        <p class="box-slide-description">Hei-Lab is organized into 5 main Labs that aim to promote interdisciplinary 
+                            knowledge and develop interventions in Psychology, Human interpersonal relationships, Social Behaviour, play, and Interaction design: 
+                            HCB: Human Cognition and Behaviour Lab PHC: Psychopathology and Human Change Lab HDR: Human Development and Relationships Lab 
+                            SBEC: Social Behaviour, Environment, and Culture Lab PID: Playful Interaction Design Lab</p>
+                            <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <section id="ts-features" class="ts-features pb-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-5">
+            <div class="ts-service-box">
+                <div class="ts-service-image-wrapper">
+                    <img loading="lazy" class="w-100" src="images/services/service1.jpg" alt="service-image">
+                </div>
+                <div class="d-flex">
+                    <div class="ts-service-box-img">
+                        <img loading="lazy" src="images/icon-image/service-icon1.png" alt="service-icon" />
+                    </div>
+                    <div class="ts-service-info">
+                        <h3 class="service-box-title"><a href="service-single.html">Zero Harm Everyday</a></h3>
+                        <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.</p>
+                        <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-5">
+            <div class="ts-service-box">
+                <div class="ts-service-image-wrapper">
+                    <img loading="lazy" class="w-100" src="images/services/service2.jpg" alt="service-image">
+                </div>
+                <div class="d-flex">
+                    <div class="ts-service-box-img">
+                        <img loading="lazy" src="images/icon-image/service-icon2.png" alt="service-icon" />
+                    </div>
+                    <div class="ts-service-info">
+                        <h3 class="service-box-title"><a href="service-single.html">Virtual Construction</a></h3>
+                        <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.</p>
+                        <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-5">
+            <div class="ts-service-box">
+                <div class="ts-service-image-wrapper">
+                    <img loading="lazy" class="w-100" src="images/services/service3.jpg" alt="service-image">
+                </div>
+                <div class="d-flex">
+                    <div class="ts-service-box-img">
+                        <img loading="lazy" src="images/icon-image/service-icon3.png" alt="service-icon" />
+                    </div>
+                    <div class="ts-service-info">
+                        <h3 class="service-box-title"><a href="service-single.html">Build To Last</a></h3>
+                        <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.</p>
+                        <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </section> -->
+
+    <!-- COUNTERS -->
+    <section id="facts" class="facts-area dark-bg">
+    <div class="container">
+        <div class="facts-wrapper">
+            <div class="row">
+                <div class="col-md-6"><h3>Team</h3></div>
+                <div class="col-md-6"><h3>Research</h3></div>
+            <div class="col-md-3 col-sm-6 ts-facts">
+                
+                <div class="ts-facts-content">
+                    <h2 class="ts-facts-num"><span class="counterUp" data-count="41">0</span></h2>
+                    <h3 class="ts-facts-title">Reserchers</h3>
+                </div>
+            </div><!-- Col end -->
+
+            <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
+                
+                <div class="ts-facts-content">
+                    <h2 class="ts-facts-num"><span class="counterUp" data-count="32">0</span></h2>
+                    <h3 class="ts-facts-title">Colaborators</h3>
+                </div>
+            </div><!-- Col end -->
+
+            <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
+                
+                <div class="ts-facts-content">
+                    <h2 class="ts-facts-num"><span class="counterUp" data-count="96">0</span></h2>
+                    <h3 class="ts-facts-title">Funded Projects</h3>
+                </div>
+            </div><!-- Col end -->
+
+            <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
+                
+                <div class="ts-facts-content">
+                    <h2 class="ts-facts-num"><span class="counterUp" data-count="376">0</span></h2>
+                    <h3 class="ts-facts-title">Papers</h3>
+                </div>
+            </div><!-- Col end -->
+
+            </div> <!-- Facts end -->
+        </div>
+        <!--/ Content row end -->
+    </div>
+    <!--/ Container end -->
+    </section>
+
+    <!-- SUBLABS -->
+    <section id="sub-labs" class="ts-service-area pb-0 solid-bg">
+        <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h3 class="section-sub-title">Our Sub-Labs</h3>
+            </div>
+        </div>
+        <!--/ Title row end -->
+    
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img">
+                    <span><i class="fa-solid fa-brain w3-xxxlarge lab-icons"></i></span>
+                    </div>
+                    <div class="ts-service-box-info">
+                    <h3 class="service-box-title"><a href="#">HCB</a></h3>
+                    <p>Human Cognition and Behaviour Lab</p>
+                    </div>
+                </div><!-- Service 1 end -->
+    
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img">
+                    <span><i class="fa-solid fa-person w3-xxxlarge lab-icons"></i></span>
+                    </div>
+                    <div class="ts-service-box-info">
+                    <h3 class="service-box-title"><a href="#">PHC</a></h3>
+                    <p>Psychopathology and Human Change Lab</p>
+                    </div>
+                </div><!-- Service 2 end -->
+    
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img">
+                    <span><i class="fa-regular fa-heart w3-xxxlarge lab-icons"></i></span>
+                    </div>
+                    <div class="ts-service-box-info">
+                    <h3 class="service-box-title"><a href="#">HDR</a></h3>
+                    <p>Human Development and Relationships Lab</p>
+                    </div>
+                </div><!-- Service 3 end -->
+    
+            </div><!-- Col end -->
+            
+            <div class="col-lg-4 text-center w3-hide-small">
+                <img loading="lazy" class="img-fluid  w3-hide-small">
+            </div><!-- Col end -->
+    
+            <div class="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img">
+                    <span><i class="fa-solid fa-seedling w3-xxxlarge lab-icons"></i></span>
+                    </div>
+                    <div class="ts-service-box-info">
+                    <h3 class="service-box-title"><a href="#">SBEC</a></h3>
+                    <p>Social Behaviour, Environment, and Culture Lab</p>
+                    </div>
+                </div><!-- Service 4 end -->
+    
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img">
+                    <span><i class="fa-solid fa-users w3-xxxlarge lab-icons"></i></span>
+                    </div>
+                    <div class="ts-service-box-info">
+                    <h3 class="service-box-title"><a href="#">PID</a></h3>
+                    <p>Playful Interaction Design Lab</p>
+                    </div>
+                </div><!-- Service 5 end -->
+
+            </div><!-- Col end -->
+        </div><!-- Content row end -->
+    
+        </div>
+        <!--/ Container end -->
+    </section>
+
+    <!-- NEWS -->
+    <section id="news" class="news">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+            <h2 class="">News</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="latest-post">
+                
+                <div class="post-body">
+                    <h4 class="post-title">
+                        <a class="d-inline-block">220713 – Aberto concurso para 4 bolsas de investigação “Verão com Ciência”</a>
+                    </h4>
+                    <div class="latest-post-meta">
+                        <span class="post-item-date">
+                        <i class="fa fa-clock-o"></i> July 13, 2022
+                        </span>
+                    </div>
+                </div>
+                <div class="latest-post-media">
+                    <span>
+                        Concurso para 4 bolsas de investigação "Verão com Ciência" 
+                        - Edital em Português - verao-com-ciencia-psicologia_2022.pdf 
+                        - Call in English - edital_candidatura_escolasdeciencia_2022_en   
+                        Mais informações em...
+                    </span>       
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="latest-post">
+                
+                <div class="post-body">
+                    <h4 class="post-title">
+                        <a class="d-inline-block">220808 – HEI-Lab researchers won 4 FCT projects</a>
+                    </h4>
+                    <div class="latest-post-meta">
+                        <span class="post-item-date">
+                        <i class="fa fa-clock-o"></i> Aug 8, 2022
+                        </span>
+                    </div>
+                </div>
+                <div class="latest-post-media">
+                    <span>
+                        Project: Game Making in Contexts Lead Researcher: Filipe Luz 
+                        Co-Lead Researcher: Isabel Fonseca Reference: 2022.07939.PTDC 
+                        Type: Projetos de Investigação Científica e Desenvolvimento Tecnológico 
+                        Project: "Interoceptively Expecting: Can Enhanced Interoception During...
+                    </span>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="latest-post">
+                <div class="post-body">
+                    <h4 class="post-title">
+                        <a class="d-inline-block">220808 – Recruitment for a Ph.D. Research Assistant</a>
+                    </h4>
+                    <div class="latest-post-meta">
+                        <span class="post-item-date">
+                        <i class="fa fa-clock-o"></i> 
+                        </span>
+                    </div>
+                </div>
+                <div class="latest-post-media">
+                    <span>
+                        HEI-Lab is looking for a Ph.D. Research Assistant 
+                        Ref: Ph.D. Research Assistant_CEEC-COFAC/ULusófona-HEI-Lab/3-202 
+                        EURAXESS Job Offer id: 823641 To apply: https://www.euraxess.pt/node/823641/  
+                        Edital em Português - Edital FCT-HEI-Lab PT_CEEC_3_Agosto 
+                        Call in English -...
+                    </span>
+                </div>
+            </div>
+            </div>
+        </div>
 
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-32">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/HEILabULHT/" target="_blank"><i class="fa fa-facebook-official fa-fw w3-hover-opacity w3-xxlarge"></i></a>
-    <i class="fa fa-twitter fa-fw w3-hover-opacity w3-xxlarge"></i>
-    <a href="https://www.linkedin.com/in/hei-lab-human-environment-interaction-lab-174b31227/" target="_blank"><i class="fa fa-linkedin fa-fw w3-hover-opacity w3-xxlarge"></i></a>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green ">w3.css</a></p>
-</footer>
+        <div class="general-btn text-center mt-4">
+            <a class="btn btn-primary" href="news-left-sidebar.html">See All Posts</a>
+        </div>
 
-<script>
- // Animate number counters
- function animate(obj, initVal, lastVal, duration) {
-         let startTime = null;
+    </div>
+    </section>
 
-      //get the current timestamp and assign it to the currentTime variable
-      let currentTime = Date.now();
+    <div class="row text-center">
+    </div>
 
-      //pass the current timestamp to the step function
-      const step = (currentTime ) => {
+    <!-- PARTNERS -->
+    <div class="w3-container solid-bg">
+    <div class="w3-content w3-padding-64" id="partners">
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <div class="col-12">
+            <h2 class="">Our Partners</h2>
+          </div>
+          <br>
+        <div class="w3-col m3">
+          <img src="images/ulht_logo-1024x1024.png" style="width:70%;" alt="Universidade Lusófona">
+        </div>
+        <div class="w3-col m3">
+          <img src="images/erasmus-1024x1024.png" style="width:70%;" alt="Erasmus+">
+        </div>
+        <div class="w3-col m3">
+          <img src="images/fct_logo-1024x1024.png" style="width:70%;" alt="Fundação para a Ciência e a Tecnologia">
+        </div>
+        <div class="w3-col m3">
+          <img src="images/cost_logo-1024x1024.png" style="width:70%;" alt="European Cooperation in Science & Technology">
+        </div>
+      </div>
+      <div class="w3-row-padding w3-center w3-section"> 
+        <div class="w3-col m3">
+          <img src="images/ilind_logo.png" style="width:70%;" alt="Instituto Lusófono de Investigação e Desenvolvimento">
+        </div>
+        <div class="w3-col m3">
+          <img src="images/epcv_logo.png" style="width:70%;" alt="Escola de Psicologia e Ciências da Vida">
+        </div>
+        <div class="w3-col m3">
+          <img src="images/promethean-1024x1024.png" style="width:70%;"alt="Promethean">
+        </div>
+        <div class="w3-col m3">
+          <img src="images/dcam-1024x1024.png" style="width:70%;" alt="Departamento Cinema e Artes dos Media">
+        </div>  
+      </div>
+    </div>
+    </div>
 
-      //if the start time is null, assign the current time to startTime
-      if (!startTime) {
-         startTime = currentTime ;
-      }
+<!-- FOOTER -->
+    <footer id="footer" class="footer bg-overlay">
+        <div class="footer-main">
+        <div class="container">
+            <h3 class="widget-title">Contact Us</h3>
+            <div class="row ">
+                <div class="col-lg-6 col-md-6 footer-widget footer-about">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.978312690763!2d-9.15517640006054!3d38.758088944740315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1932fc16a21773%3A0xbb910a0db57ce114!2sUniversidade%20Lus%C3%B3fona%20de%20Humanidades%20e%20Tecnologias!5e1!3m2!1spt-PT!2spt!4v1667993349705!5m2!1spt-PT!2spt" 
+                    width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div><!-- Col end -->
+            <div class="col-lg-6 col-md-6 footer-widget">
+                    <div class="w3-large w3-margin-bottom">
+                        <br/>
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <span>Building D, Room D1.3 </span><br>
+                    <i class="fa fa-fw w3-xlarge w3-margin-right"></i><span>Lusófona University </span><br>
+                    <i class="fa fa-fw w3-xlarge w3-margin-right"></i><span>Campo Grande, 376 1749-024 Lisbon</span><br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> +00 351 217 515 500<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> hei-lab@ulusofona.pt<br>
+                    </div>
+                    <br/>
+                    <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-gray w3-right w3-section" type="submit"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+                    </form>
+            </div><!-- Col end -->
 
-      //calculate the value to be used in calculating the number to be displayed
-      const progress = Math.min((currentTime - startTime)/ duration, 1);
+            </div><!-- Row end -->
+        </div><!-- Container end -->
+        </div><!-- Footer main end -->
 
-      //calculate what to be displayed using the value gotten above
-      obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+        <div class="copyright">
+            <div class="container">
+            <div class="row align-items-center">
+                
+    
+                <div class="col-md-12">
+                <div class="copyright-info text-center">
+                    <p>HEI-Lab | Universídade Lusófona &copy;2022</p>
+                </div>
+                </div>
+    
+                <div class="col-md-12">
+                <div class="footer-menu text-center">
+                        <a href="https://www.facebook.com/HEILabULHT/" target="_blank"><i class="fa-brands fa-square-facebook fa-fw w3-hover-opacity w3-xxlarge"></i></a>
+                        <a><i class="fa-brands fa-square-twitter fa-fw w3-hover-opacity w3-xxlarge"></i></a>
+                        <a href="https://www.linkedin.com/in/hei-lab-human-environment-interaction-lab-174b31227/" target="_blank">
+                            <i class="fa-brands fa-linkedin w3-hover-opacity w3-xxlarge"></i>
+                        </a>
+                </div>
+                </div>
 
-      //checking to make sure the counter does not exceed the last value (lastVal)
-      if (progress < 1) {
-         window.requestAnimationFrame(step);
-      } else {
-            window.cancelAnimationFrame(window.requestAnimationFrame(step));
-         }
-      };
-      //start animating
-         window.requestAnimationFrame(step);
-      }
-      let text1 = document.getElementById('num-researchers');
-      let text2 = document.getElementById('num-colaborators');
-      let text3 = document.getElementById('num-projects');
-      let text4 = document.getElementById('num-papers');
+                <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+                    <button class="btn btn-primary" title="Back to Top">
+                        <i class="fa fa-angle-double-up"></i>
+                    </button>
+                </div>
+            </div>
 
-      const load = () => {
-         animate(text1, 0, 41, 3000);
-         animate(text2, 0, 32, 3000);
-         animate(text3, 0, 96, 3000);
-         animate(text4, 200, 376, 3000);
-      }
-</script>
+        </div><!-- Container end -->
+        </div><!-- Copyright end -->
+    </footer><!-- Footer end -->
 
 
-<script type = "text/javascript" src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/slick/slick-animation.min.js"></script>
+  <script src="plugins/colorbox/jquery.colorbox.js"></script>
+  <script src="plugins/shuffle/shuffle.min.js" defer></script>
+  <script src="js/script.js"></script>
+
+</div><!-- Body inner end -->
 </body>
+
+</html>
