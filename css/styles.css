@@ -89,7 +89,11 @@ body {
     overflow: hidden;
   }
 
-  
+  .nav-tabs .nav-item .nav-link.active {
+    color: #ffb700;
+    font-weight: bold;
+  }
+
   .preload {
     position: fixed;
     background: #fff center center no-repeat; /* TODO add an image here */
