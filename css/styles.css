@@ -88,6 +88,7 @@ body {
     position: relative;
     overflow: hidden;
   }
+
   
   .preload {
     position: fixed;
@@ -2342,6 +2343,13 @@ body {
   /* News section  */
   .latest-post {
     position: relative;
+    display: block;
+    border-color: darkgray;
+    border-width: 1px;
+    border-style: solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
   }
   
   .latest-post .image-angle:before {
@@ -3417,4 +3425,5 @@ body {
     margin-top: 30px;
     font-weight: 700;
   }
+
   
