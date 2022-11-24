@@ -8,6 +8,10 @@ body {
   .lab-icons{
     color: #ffb700;
   }
+
+  .pagination{
+    color: #ffb700;
+  }
   
   body,
   p {
