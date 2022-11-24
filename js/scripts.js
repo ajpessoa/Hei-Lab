@@ -1,34 +1,38 @@
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
+// Animate number counters
+function animate(obj, initVal, lastVal, duration) {
+  let startTime = null;
+
+//get the current timestamp and assign it to the currentTime variable
+let currentTime = Date.now();
+
+//pass the current timestamp to the step function
+const step = (currentTime ) => {
+
+//if the start time is null, assign the current time to startTime
+if (!startTime) {
+  startTime = currentTime ;
+}
+
+//calculate the value to be used in calculating the number to be displayed
+const progress = Math.min((currentTime - startTime)/ duration, 1);
+
+//calculate what to be displayed using the value gotten above
+obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+//checking to make sure the counter does not exceed the last value (lastVal)
+if (progress < 1) {
+  window.requestAnimationFrame(step);
+} else {
+     window.cancelAnimationFrame(window.requestAnimationFrame(step));
   }
+};
+//start animating
+  window.requestAnimationFrame(step);
 }
+let text1 = document.getElementById('num-projects');
+let text2 = document.getElementById('num-');
 
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
+const load = () => {
+  animate(text1, 0, 96, 3000);
+  animate(text2, 0, 7, 3000);
 }
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-

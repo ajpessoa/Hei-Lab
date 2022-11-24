@@ -57,6 +57,28 @@ jQuery(function ($) {
 		}
 		counter();
 
+		function counter2() {
+			$('.counter2').each(function () {
+				var $this = $(this),
+					countTo = $this.attr('data-count');
+				$({
+					countNum: $this.text()
+				}).animate({
+					countNum: countTo
+				}, {
+					duration: 1000,
+					step: function () {
+						$this.text(Math.floor(this.countNum));
+					},
+					complete: function () {
+						$this.text(this.countNum);
+					}
+				});
+			});
+		}
+		counter2();
+
+
 		// scroll to top btn show/hide
 		function scrollTopBtn() {
 			var scrollToTop = $('#back-to-top'),
