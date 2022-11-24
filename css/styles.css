@@ -1388,9 +1388,7 @@ body {
   }
   
   .banner-carousel .slick-dots {
-    opacity: 0;
-    filter: alpha(opacity=0);
-    bottom: 60px;
+    display: none;
   }
   
   .slick-dots li button::before {
